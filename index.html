@@ -115,6 +115,24 @@
             margin-bottom: 0.5em;
         }
 
+        .slideshow {
+            height: 600px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            width: 403px;
+        }
+
+        #slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        #slides img {
+            width: 403px;
+            flex-shrink: 0;
+        }
+
         @media (prefers-color-scheme: dark) {
             :root {
                 --text-color: floralwhite;
@@ -154,9 +172,18 @@
         </div>
         <div class="tile photography">
             <h2><a href="https://masonmirabito.darkroom.com/">Photography</a></h2>
-            put some photos here and link to portfolio
+            <div class="slideshow">
+                <div id="slides">
+                    <img src="/media/Image01.webp">
+                    <img src="/media/Image02.webp">
+                    <img src="/media/Image03.webp">
+                    <img src="/media/Image04.webp">
+                    <img src="/media/Image05.webp">
+                    <img src="/media/Image06.webp">
+                </div>
+            </div>
         </div>
-        <div class="tile web">
+        <div class=" tile web">
             <h2><a href="https://monologue.page">Monologue</a></h2>
             <div class="subheading-row"> <a class="big_a" href="https://github.com/IAMME543/monologue">Github</a>
                 <p>March 2026</p>
@@ -194,6 +221,7 @@
         </div>
 
     </main>
+    <script src="index.js"></script>
 
 </body>
 
