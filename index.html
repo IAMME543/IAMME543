@@ -9,6 +9,12 @@
         :root {
             font-size: 14px;
             --text-color: black;
+            --title-color: rgb(255, 192, 75);
+            --photography-color: rgb(209, 229, 236);
+            --game-color: rgb(238, 202, 238);
+            --web-color: rgb(192, 234, 192);
+            --hardware-color: rgb(203, 229, 233);
+            --contact-color: rgb(233, 233, 233);
         }
 
         html,
@@ -72,33 +78,33 @@
 
         .title {
             grid-column: span 2;
-            background-color: rgb(255, 192, 75);
+            background-color: var(--title-color);
         }
 
         .photography {
             grid-column: span 2;
             grid-row: span 2;
-            background-color: rgb(209, 229, 236);
+            background-color: var(--photography-color);
         }
 
 
 
         .game {
-            background-color: rgb(238, 202, 238);
+            background-color: var(--game-color);
         }
 
         .web {
-            background-color: rgb(192, 234, 192);
+            background-color: var(--web-color);
         }
 
         .hardware {
-            background-color: rgb(203, 229, 233);
+            background-color: var(--hardware-color);
         }
 
 
 
         .contact {
-            background-color: rgb(233, 233, 233);
+            background-color: var(--contact-color);
         }
 
         .subheading-row {
@@ -112,6 +118,12 @@
         @media (prefers-color-scheme: dark) {
             :root {
                 --text-color: floralwhite;
+                --title-color: hsl(38, 66%, 40%);
+                --photography-color: rgb(80, 105, 115);
+                --game-color: rgb(120, 85, 120);
+                --web-color: rgb(80, 120, 80);
+                --hardware-color: rgb(85, 115, 120);
+                --contact-color: rgb(90, 90, 90);
             }
 
             body {
