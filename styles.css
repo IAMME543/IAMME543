@@ -12,8 +12,9 @@
 
 html,
 body {
-    height: 99vh;
-    font-family: sans-serif;
+    height: 97vh;
+    font-family: Cabin, sans-serif;
+    font-weight: 400;
     color: var(--text-color);
     overflow: hidden;
 }
@@ -27,12 +28,22 @@ body {
 main {
     margin: 0 auto;
     padding: 20px;
-    width: 95vw;
+    width: 90vw;
     flex: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 700;
 }
 
 p {
@@ -52,7 +63,8 @@ a {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 10em;
+    line-height: 10rem;
     margin: 0em;
     color: var(--text-color);
 }
