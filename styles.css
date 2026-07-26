@@ -8,6 +8,8 @@
   --web-color: rgb(192, 234, 192);
   --hardware-color: rgb(224, 144, 144);
   --contact-color: rgb(233, 233, 233);
+  --notE5: #e5e5e5;
+  --background-color: floralwhite
 }
 
 html,
@@ -149,13 +151,13 @@ img:not(#slides img) {
   position: absolute;
   inset: -30px;
 
-  background-color: #ffffff;
+  background-color: var(--background-color);
 
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.4'/%3E%3C/svg%3E"),
     
-    linear-gradient(#e5e5e5 1px, transparent 1px),
-    linear-gradient(90deg, #e5e5e5 1px, transparent 1px);
+    linear-gradient(var(--notE5) 1px, transparent 1px),
+    linear-gradient(90deg, var(--notE5) 1px, transparent 1px);
 
   background-size:
     200px 200px,
@@ -177,6 +179,8 @@ img:not(#slides img) {
     --web-color: rgb(80, 120, 80);
     --hardware-color: rgb(133, 85, 85);
     --contact-color: rgb(111, 111, 111);
+    --notE5: rgb(35,35,35);
+    --background-color: rgb(10,10,10);
   }
 
   body {
