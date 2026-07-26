@@ -6,7 +6,7 @@
     --photography-color: rgb(209, 229, 236);
     --game-color: rgb(238, 202, 238);
     --web-color: rgb(192, 234, 192);
-    --hardware-color: rgb(203, 229, 233);
+    --hardware-color: rgb(224, 144, 144);
     --contact-color: rgb(233, 233, 233);
 }
 
@@ -88,10 +88,11 @@ h2 {
 }
 
 .photography {
-    grid-column: span 2;
-    grid-row: span 2;
     background-color: var(--photography-color);
-
+}
+.photo-slide {
+        grid-column: span 2;
+    grid-row: span 2;
 }
 
 
@@ -138,10 +139,13 @@ h2 {
     transition: transform 0.5s ease;
 
 }
-
 #slides img {
     width: 403px;
     flex-shrink: 0;
+}
+img:not(#slides img) {
+    max-width: 100%;
+    height: auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -152,7 +156,7 @@ h2 {
         --photography-color: rgb(80, 105, 115);
         --game-color: rgb(120, 85, 120);
         --web-color: rgb(80, 120, 80);
-        --hardware-color: rgb(85, 115, 120);
+        --hardware-color: rgb(133, 85, 85);
         --contact-color: rgb(111, 111, 111);
     }
 
