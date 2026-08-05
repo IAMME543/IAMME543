@@ -4,13 +4,14 @@ let index = 0;
 const total = slides.children.length;
 
 setInterval(() => {
-    index++;
+  index++;
 
-    if (index >= total) {
-        index = 0;
-    }
+  if (index >= total) {
+    index = 0;
+  }
+  const rect = slides.firstElementChild.getBoundingClientRect();
 
-    slides.style.transform = `translatex(-${index * 403}px)`;
+  slides.style.transform = `translatex(-${index * rect.width}px)`;
 }, 5000);
 
 const background = document.querySelector(".background");
@@ -19,6 +20,5 @@ document.addEventListener("mousemove", (e) => {
   const x = (e.clientX / window.innerWidth - 0.5) * 2;
   const y = (e.clientY / window.innerHeight - 0.5) * 2;
 
-  background.style.transform =
-    `translate(${x * 15}px, ${y * 15}px)`;
+  background.style.transform = `translate(${x * 15}px, ${y * 15}px)`;
 });
