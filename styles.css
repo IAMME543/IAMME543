@@ -200,18 +200,26 @@ img:not(#slides img) {
     background-color: black;
   }
 }
-@media (max-width: 600px) {
+@media (max-aspect-ratio: 4/3) {
   html,
   body {
     height: auto;
     min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
     position: relative;
+  }
+  html {
+    overflow: auto;
   }
 
   .background {
-    min-height: calc(100% + 60px);
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: auto;
+    height: calc(100% + 60px);
+    min-height: 100%;
+    overflow: hidden;
   }
 
   main {
