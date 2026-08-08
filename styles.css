@@ -20,6 +20,8 @@ body {
   font-weight: 400;
   color: var(--text-color);
   overflow: hidden;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
@@ -30,13 +32,17 @@ body {
 main {
   margin: 0 auto;
   padding: 20px;
-  width: 90vw;
-  height: calc(100vh - 40px);
+  aspect-ratio: 5/3;
+  height: 100vh;
+  max-width: 100wv;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   z-index: 1;
+  box-sizing: border-box;
+  min-height: 0;
 }
 
 h1,
@@ -65,7 +71,7 @@ a {
 }
 
 h1 {
-  font-size: 10em;
+  font-size: 10rem;
   line-height: 10rem;
   margin: 0em;
   color: var(--text-color);
@@ -82,6 +88,7 @@ h2 {
 
 .tile {
   padding: 0.8rem;
+  min-height: 0;
 }
 
 .title {
